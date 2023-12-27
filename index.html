@@ -166,6 +166,110 @@
             </tr>
           </tfoot>
         </table>
+        <br /><br />
+        <h3>Contact Me :</h3>
+        <hr />
+        <form method="get" action="https://httpbin.org/get">
+          <fieldset>
+            <legend>Personal Info</legend>
+            <p>
+              <label for="first_name">First Name</label>
+              <input
+                type="text"
+                name="first_name"
+                placeholder="Enter here..."
+                autocomplete="on"
+                required
+                autofocus
+              />
+            </p>
+            <p>
+              <label for="last_name">Last Name</label>
+              <input
+                type="text"
+                name="last_name"
+                placeholder="Enter here..."
+                autocomplete="on"
+                required
+              />
+            </p>
+            <p>
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="Password"
+                placeholder="Enter here..."
+                required
+              />
+            </p>
+            <p>
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Enter here..."
+                required
+                pattern="[0-9]{6}"
+              />
+            </p>
+            <p>
+              <label for="tech_languages_number">Teck Languages Number</label>
+              <input
+                type="number"
+                name="tech_languages_number"
+                required
+                min="1"
+                max="10"
+              />
+            </p>
+          </fieldset>
+          <br /><br />
+          <fieldset>
+            <legend>Favorite Cofee</legend>
+            <label for="coffe">Favorite Coffee</label>
+            <select name="coffe" id="coffe" multiple size="4">
+              <optgroup label="Packed">
+                <option value="nescafe">Nescafe</option>
+                <option value="cappunino">Cappunino</option>
+              </optgroup>
+              <optgroup label="Manually">
+                <option value="latee">Latte</option>
+                <option value="cortado">Cortado</option>
+              </optgroup>
+            </select>
+          </fieldset>
+          <br /><br />
+          <fieldset>
+            <legend>Best Food</legend>
+            <h4>Please specify your best food</h4>
+            <input type="radio" name="food" value="tacos" />
+            <label for="tacos">Tacos</label>
+            <input type="radio" name="food" value="pizza" />
+            <label for="pizza">Pizza</label>
+          </fieldset>
+          <br /><br />
+          <fieldset>
+            <legend>Best Pets</legend>
+            <h4>Please specify your best pet/s</h4>
+            <input type="checkbox" name="pets" value="dog" />
+            <label for="dog">Dog</label>
+            <input type="checkbox" name="pets" value="cat" />
+            <label for="cat">Cat</label>
+          </fieldset>
+          <br /><br />
+          <fieldset>
+            <legend>Message</legend>
+            <textarea
+              name="message"
+              cols="30"
+              rows="10"
+              placeholder="Enter your message here..."
+            ></textarea>
+          </fieldset>
+          <br /><br />
+          <button type="reset">Reset</button>
+          <button type="submit">Submit</button>
+        </form>
       </section>
     </main>
   </body>
