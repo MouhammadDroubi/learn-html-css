@@ -1,3 +1,4 @@
+/* Text Transform */
 .text-transform-uppercase {
   text-transform: uppercase;
 }
@@ -7,9 +8,26 @@
 .text-transform-lowercase {
   text-transform: lowercase;
 }
+/* Important */
 .important h4 {
   color: red !important;
 }
 .important h4:nth-child(2) {
   color: blue;
+}
+/* Colors */
+.colors > h4:first-child {
+  color: #ff0000;
+}
+.colors > h4:nth-child(2) {
+  color: rgb(255, 0, 0);
+}
+.colors > h4:nth-child(3) {
+  color: rgba(255, 0, 0, 0.5);
+}
+.colors > h4:nth-child(4) {
+  color: hsl(209, 100%, 50%);
+}
+.colors > h4:last-child {
+  color: hsl(209, 100%, 50%, 0.8);
 }
