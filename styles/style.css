@@ -7,3 +7,9 @@
 .text-transform-lowercase {
   text-transform: lowercase;
 }
+.important h4 {
+  color: red !important;
+}
+.important h4:nth-child(2) {
+  color: blue;
+}
