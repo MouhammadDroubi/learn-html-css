@@ -122,3 +122,29 @@
 .styling a:visited {
   color: purple;
 }
+/* Lists */
+.lists > ul:first-child {
+  list-style-type: square;
+}
+.lists > ol:nth-child(3) {
+  list-style-type: upper-alpha;
+}
+.lists > ul:nth-child(5) {
+  text-align: center;
+  list-style-position: inside;
+}
+.lists > ul:nth-child(7) {
+  text-align: center;
+  list-style-position: outside;
+}
+.lists > ul:nth-child(9) {
+  list-style-image: url("/assets/icons/marked.svg");
+}
+.lists > ul:nth-child(11) > li {
+  text-align: center;
+}
+.lists > ul:nth-child(11) ::marker {
+  color: red;
+  content: "$";
+  padding-left: 20px;
+}
