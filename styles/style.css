@@ -78,3 +78,37 @@
   background-color: white;
   border: 1px solid blue;
 }
+/* Typography */
+.typography > p:first-child {
+  text-decoration: line-through;
+}
+.typography > p:nth-child(2) {
+  text-transform: capitalize;
+}
+.typography > p:nth-child(3) {
+  text-align: justify;
+}
+.typography > p:nth-child(4) {
+  text-indent: 20px;
+}
+.typography > p:nth-child(5) {
+  text-shadow: 3px 3px 5px #000;
+}
+.typography > p:nth-child(6) {
+  line-height: 2;
+}
+.typography > p:nth-child(7) {
+  letter-spacing: 5px;
+}
+.typography > p:nth-child(8) {
+  word-spacing: 10px;
+}
+.typography > p:nth-child(9) {
+  font-weight: 900;
+}
+.typography > p:nth-child(10) {
+  font-style: italic;
+}
+.typography > p:nth-child(11) {
+  font-family: fantasy;
+}
