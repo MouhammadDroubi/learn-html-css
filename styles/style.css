@@ -31,3 +31,50 @@
 .colors > h4:last-child {
   color: hsl(209, 100%, 50%, 0.8);
 }
+.units > div > div {
+  margin-top: 20px;
+  height: 2px;
+  background-color: black;
+  display: inline-block;
+}
+.units > div:first-child > div {
+  width: 10px;
+}
+.units > div:nth-child(2) > div {
+  width: 10pt;
+}
+.units > div:nth-child(3) > div {
+  width: 10px;
+}
+.units > div:nth-child(4) > div {
+  width: 1in;
+}
+.units > div:nth-child(5) > div {
+  width: 5vw;
+}
+
+.units > div:nth-child(6) > div {
+  width: 2rem;
+}
+.units > div:nth-child(8),
+.units > div:nth-child(10) {
+  border: 1px solid red;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+}
+.units > div:nth-child(10) {
+  width: 50%;
+  height: 50px;
+}
+.units > div:nth-child(10) > span {
+  display: block;
+}
+.units > div:nth-child(10) > div {
+  width: 50%;
+  height: 30px;
+  margin-top: 0px;
+  display: block;
+  background-color: white;
+  border: 1px solid blue;
+}
