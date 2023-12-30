@@ -112,3 +112,13 @@
 .typography > p:nth-child(11) {
   font-family: fantasy;
 }
+/* Links */
+.styling a {
+  color: red;
+}
+.styling a:active {
+  color: yellow;
+}
+.styling a:visited {
+  color: purple;
+}
