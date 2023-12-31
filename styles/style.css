@@ -168,3 +168,23 @@
 .display > div:nth-child(7) {
   display: inline-block;
 }
+/* Floats */
+.floats > section {
+  display: flow-root;
+}
+.floats > section > div {
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+}
+.floats > section > p {
+  text-align: justify;
+}
+.floats > section:first-child > div {
+  float: left;
+  margin-right: 20px;
+}
+.floats > section:nth-child(2) > div {
+  float: right;
+  margin-left: 20px;
+}
