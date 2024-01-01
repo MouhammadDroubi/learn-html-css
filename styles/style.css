@@ -413,9 +413,33 @@
     rgb(54, 172, 250)
   );
 }
-
 /* Radial Gradient */
 .radial-gradient {
   height: 400px;
   background-image: radial-gradient(red, rgb(245, 10, 186));
+}
+/* Media query */
+.media-query-screen > div {
+  height: 200px;
+  background-color: red;
+}
+
+@media screen and (max-width: 500px) {
+  .media-query-screen > div {
+    background-color: blue;
+  }
+}
+.media-query-orientation > div {
+  height: 200px;
+}
+
+@media (orientation: landscape) {
+  .media-query-orientation > div {
+    background-color: blue;
+  }
+}
+@media (orientation: portrait) {
+  .media-query-orientation > div {
+    background-color: red;
+  }
 }
