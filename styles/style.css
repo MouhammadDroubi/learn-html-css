@@ -348,3 +348,51 @@
   order: 1;
   background-color: red;
 }
+/* Flex Grid */
+.display-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 50px 100px;
+  gap: 1px;
+}
+.display-grid > div,
+.display-grid-area > div > div {
+  background-color: #000;
+  color: white;
+  display: grid;
+  place-content: center;
+}
+.boxes > div:first-child {
+  /* Method number 1 */
+  /* grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3; */
+
+  /* Method number 2 */
+  /* grid-row: 1/3;
+  grid-column: 1/3; */
+
+  /* Method number 3 */
+  grid-area: 1/1/3/3;
+}
+.display-grid-area {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-areas:
+    "hd hd hd hd hd hd hd hd hd"
+    "mn mn mn mn mn mn mn as as"
+    "ft ft ft ft ft ft ft ft ft";
+}
+.display-grid-area > div:first-child {
+  grid-area: hd;
+}
+.display-grid-area > div:nth-child(2) {
+  grid-area: mn;
+}
+.display-grid-area > div:nth-child(3) {
+  grid-area: as;
+}
+.display-grid-area > div:nth-child(4) {
+  grid-area: ft;
+}
