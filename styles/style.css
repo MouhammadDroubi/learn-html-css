@@ -404,3 +404,18 @@
   background-size: cover;
   background-position: top left;
 }
+/* Linear gradient */
+.linear-gradient {
+  height: 400px;
+  background-image: linear-gradient(
+    to right,
+    rgb(128, 249, 255),
+    rgb(54, 172, 250)
+  );
+}
+
+/* Radial Gradient */
+.radial-gradient {
+  height: 400px;
+  background-image: radial-gradient(red, rgb(245, 10, 186));
+}
