@@ -440,6 +440,21 @@
 }
 @media (orientation: portrait) {
   .media-query-orientation > div {
-    background-color: red;
+    background-color: var(--COLOR_RED);
   }
+}
+.pseudo > h5::before {
+  content: open-quote;
+}
+
+.pseudo > h5::after {
+  content: close-quote;
+}
+
+.pseudo > h5::letter {
+  color: var(--COLOR_RED);
+}
+
+:root {
+  --COLOR_RED: red;
 }
