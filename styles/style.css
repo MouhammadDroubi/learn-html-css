@@ -458,3 +458,36 @@
 :root {
   --COLOR_RED: red;
 }
+.transition > div {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  margin: 0 auto;
+}
+.transition > div:nth-child(2) {
+  transition: background-color 0.5s ease-in, scale 0.5s ease-out;
+}
+
+.transition > div:nth-child(2):hover {
+  background-color: rgb(238, 255, 2);
+  scale: 1.3;
+}
+
+.transition div:nth-child(4) {
+  animation: slide infinite 1s ease-in-out;
+}
+
+@keyframes slide {
+  33% {
+    transform: translateX(30vw) rotate(90deg);
+    background-color: aqua;
+  }
+  66% {
+    transform: translateX(-30vw) rotate(-90deg);
+    background-color: yellow;
+  }
+  100% {
+    transform: translateX(0vw);
+    background-color: purple;
+  }
+}
